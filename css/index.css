@@ -1,0 +1,149 @@
+@CHARSET "UTF-8";
+
+/***** body *****/
+div.col{
+	min-height:10em;
+	padding:0.5em;
+}
+
+/** body -> left menu ***/
+div.bar{
+	border-radius:5px;
+	background-color:white;
+	width:100%;
+}
+
+/** message red button**/
+.red-dot{
+	pointer-events: none;
+	vertical-align:top;
+	margin-top: 0.2em;
+	visibility: hidden;
+}
+
+i.fa-info-circle:hover{
+	cursor:pointer;
+	color:#f60;
+}
+
+
+/** body -> content **/
+div.content{
+	height:90%;
+}
+
+div.content-sub-block{
+	padding:1em;
+}
+
+div#exam_info{
+	height:100%;
+}
+div#exam_info h2[name="exam_name"]{
+	text-align: center;
+	margin-bottom:1em;
+}
+div#exam_info div[name="exam_desc"]{
+	max-height: 10em;
+    overflow: auto;
+    margin-top:1em;
+    margin-bottom:1em;
+}
+
+div#more_exam_answer {
+	text-align:center;
+}
+
+div#more_exam_answer button{
+	border-bottom-left-radius:0.5em;
+	border-bottom-right-radius:0.5em;
+}
+
+div#more_exam_answer button:focus{
+	outline-width: 0; /*No border when highlighted*/
+}
+
+div#exam_attach img{
+	max-width:100%;
+}
+
+div#exam_attach{
+	display:none;
+}
+
+div.content hr{
+	background-color:#C5D7E6;
+	height:1px;
+	margin:0;
+}
+
+div#exam_answer{
+	display:none;
+}
+
+div#exam_answer div#div_submit{
+	padding-top:1em;
+	text-align:center;
+}
+div#exam_answer div#div_submit span{
+	display:inline-block;
+	width:3em;
+}
+div#exam_answer div#div_submit button#btn_cancel:hover{
+	background-color:red;
+	border:1px solid red;
+}
+
+/**** div.file_list, div.free_file_list *****/
+div#file_list{
+	min-height:8em;
+	width:100%;
+}
+
+div.link, div.img {
+	position: relative;
+	display: inline-block;
+	margin:0.5em;
+	width:12em;
+	height:8em;
+	border: 1px solid #C5D7E6;
+	border-radius: 0.5em;
+    padding: 0.5em;
+    text-align: center;
+    vertical-align: middle;
+}
+div.img img{
+	max-width: 11em;
+    max-height: 7em;
+}
+
+/*show del btn*/
+div.deletable:hover .del {display: block;}
+div.del {	padding-top: 7px;padding-right: 7px;position: absolute;right:0;top:0;display: none;}
+div.del a {color: red;}
+div.deletable:active {
+	border:2px solid #C5D7E6; 
+}
+/********************************************/
+
+div#file_list img{
+	height:8em;
+}
+
+/** tip area **/
+div#exam_tips{
+	padding:0.5em;
+}
+
+div.bar.fup-file-container{
+	text-align:center;
+}
+div.bar.fup-file-container h2{
+	padding-top:0.8em;
+}
+
+/** dnd **/
+div.dnd-src:hover, div.dnd-dst:hover{
+	background-color: #f2f7fa;
+	border-radius: 0.5em;
+}

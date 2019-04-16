@@ -1,0 +1,34 @@
+@CHARSET "UTF-8";
+div.login-box{
+  background-color:#fff;
+  padding:1em;
+  border-radius:5px;
+  box-shadow: 10px 10px 5px #657786;
+  width: 25em;
+}
+
+div.row{
+	text-align:center;
+	margin:0.5em;
+	color:#14171a;
+	height:2.5em;
+	line-height:2.5em;
+}
+div.row span{
+	display:inline-block;
+	text-align:left;
+	width:4em;
+	font-weight:bold;
+}
+
+div.row.title{
+	color:#fff;
+	font-size:16px;
+}
+
+div.row input{
+	border-top:0px solid;
+	border-left:0px solid;
+	border-right:0px solid;
+	outline: none;
+}

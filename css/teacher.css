@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+textarea{
+	min-height:20em;
+}
+
+ul.menu-list{
+	max-height:45em;
+	overflow-y: scroll;
+}
+
+/** navigation toolbar **/
+div.action li#btn-menu i:hover, div.action li#btn-menu i:active{
+	cursor:	pointer;
+	color:red;
+}
+
+div#menu{
+	width:100%;
+	min-height:5em;
+	background-color:white;
+	padding:0.5em;
+	border-bottom-right-radius:0.5em;
+	border-bottom-left-radius:0.5em;
+	border-right:2px solid #acb1b4;
+	border-bottom:2px solid #acb1b4;
+	display:none;
+}
+
+div.menu-item{
+	width:6em;
+	height:4em;
+	line-height:4em;
+	border-radius:0.3em;
+}
+div.menu-item.long{
+	width:8em;
+}
+div.menu-item:hover{
+	cursor:pointer;
+}
+
+/** content-item **/
+div.content-item{
+	width:100%;
+	min-height:20em;
+	
+	display:none;
+}
+
+[class^="col-"]{
+	padding: 0.3em;
+}
+
+div.cap{
+	border-radius:0.3em;
+	background-color:white;
+	padding:0.5em;
+	width:100%;
+}
+
+/*** man_code ***/
+div#man-code{
+	border: 1px solid #acb1b4;
+    border-radius: 0.3em;
+    padding: 0.3em;
+}
+
+i.fa-lg{
+	color:#1c94e0;
+}
+i.fa-lg:hover{
+	color:red;
+	cursor:pointer;
+}
+
+ul.menu-list li i.fa-minus-circle:hover{
+	color:red;
+}
+ul.menu-list li i.fa-minus-circle{
+	float:right;
+	margin-top:0.3em;
+	color:#1c94e0;
+}
+
+form#ms_frm_stu span{
+	margin-right:1em;
+}
+
+div.cap form p{
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+/*** man_exam ***/
+ul#exam-list{
+	max-height: 50em;
+    overflow-y: scroll;
+}
+
+/*** man_stu_exam **/
+#mse_exam_stu_multiple textarea
+{
+	min-height:30em;
+}
+ul#mse_stu_in_exam{
+	max-height:30em;
+	overflow-y:scroll;
+}
+
+ul#mse_stu_in_exam li i.fa-circle-o{
+	color:#aaa;
+}
+ul#mse_stu_in_exam li i.fa-check-circle-o {
+	color:red;
+}
+ul#mse_stu_in_exam li:hover{
+	cursor:pointer;
+	color:red;
+}
+
+div#me_exam_file_list{
+	display:inline-block;
+}
+div.deletable{
+	width: 15em;
+    text-align: center;
+	
+}
+div.deletable div.del{
+	display: inline-block;
+	margin-left:1em;
+}
+
+/*** man_msg ***/
+.mev-msg-choose{
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+ul#mev_msg_to_stu{
+	overflow-y: scroll;
+}
+
+/*** man_evaluate  ***/
+div#man_evaluate ul.menu-list li.disabled{
+	display:none;
+}
+form#mev_eval_form textarea[name='answer']{
+	min-height:5em;
+}
+form#mev_eval_form input[readonly]{
+	border:none;
+}
